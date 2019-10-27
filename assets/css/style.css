@@ -1,0 +1,119 @@
+#rankingBox {
+  width: 200px;
+  height: 150px;
+  border: solid 2px black;
+  border-radius: 10px;
+  font-size: 100px;
+}
+
+#scoreBox {
+  width: 200px;
+  height: 150px;
+  border: solid 2px black;
+  border-radius: 10px;
+  font-size: 100px;
+}
+
+.images {
+  max-height: 80px;
+}
+
+.smartHouse {
+  max-height: 300px;
+}
+
+.smartNeighborhood {
+  width: 300px;
+}
+
+.links {
+  color: black;
+}
+
+.links:hover {
+  color: #f3f040;
+  text-decoration: none;
+}
+
+.btn {
+  border: 1px solid #1BAF45;
+  background: none;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  border-radius: 19.5px;
+}
+
+.preview {
+  font-size: 18px;
+}
+
+#select {
+  width: 50%;
+}
+
+.wrapper {
+  text-align: center;
+}
+
+.devices {
+  width: 250px;
+  height: 120px;
+  border: solid 2px black;
+  border-radius: 10px;
+}
+
+.navbar-brand img {
+  max-height: 70px;
+}
+
+input.form-control {
+  border: none !important;
+  border-bottom: 2px solid black !important;
+  border-radius: 0 !important;
+  font-style: italic;
+}
+
+.grower:hover {
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+}
+
+.userLink {
+  color: black;
+  text-decoration: none;
+}
+
+.userLink:hover {
+  color: #000000;
+  text-decoration: none;
+}
+
+#dropdown:focus {
+  -webkit-box-shadow: none;
+          box-shadow: none;
+}
+
+.fa.fa-star {
+  color: #94940b !important;
+}
+
+.card {
+  border: 1px solid black;
+}
+
+.custom-select {
+  border: 1px solid black;
+}
+
+.text-green {
+  color: green;
+}
+
+.button-outline-success {
+  border-radius: 2rem;
+}
+
+.card-header {
+  background: none;
+}
+/*# sourceMappingURL=style.css.map */

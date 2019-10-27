@@ -1,0 +1,187 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+    integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  <!--custom styles-->
+  <link rel="stylesheet" href="assets/css/style.css">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+  <title>EcoHoods | Compare</title>
+</head>
+
+<body>
+
+  <nav class="navbar navbar-expand-lg navbar-light">
+    <button class="navbar-toggler mr-auto" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+      aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <a class="navbar-brand" href="dashboard.html"><img src="assets/img/logo.svg" alt=""></a>
+
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav mr-auto">
+
+        <li class="nav-item">
+          <a class="nav-link" href="./dashboard.html">Dashboard</a>
+        </li>
+        <li class="nav-item active">
+          <a class="nav-link" href="./preview.html">Preview</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="./device.html">Devices</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="./influencer.html">Become Influencer</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="leaderboard.html">Leaderboard</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="leaderboardNeigh.html">Neighborhood Leaderboard</a>
+        </li>
+
+      </ul>
+    </div>
+  </nav>
+
+  <div class="container">
+    <div class="row">
+      <div class="col-md-12">
+          <h1 class="text-center mt-4">Preview Impact</h1>
+          <div class="btn-group  d-flex mt-5">
+              <select class="browser-default custom-select custom-select-lg mb-3" id="dropdown">
+                <option  disabled selected value="empty">Select a device type</option>
+                  <option value="lights">Smart lights </option>
+                  <option value="humidity">Humidity sensors</option>
+                  
+
+                </select>
+      </div>
+    </div>
+    <div class="col-md-12">
+
+      <div class="card" id="placeholder">
+        <div class="card-body d-flex align-items-center justify-content-center text-center flex-column" style="height: 40vh">
+          <p>
+            Get a preview on how adding a new device to your home will influence your savings.
+          </p>
+          <p class="font-weight-bold">
+          Click on the menu above to select a device te preview.
+          </p>
+        </div>
+      </div>
+
+      <div class="wrapper-preview d-none" id="devices">
+<div id="lights" class="d-none">
+        <div class="card flex-row flex-wrap pt-3 justify-content-md-start justify-content-center">
+            <div class="card-header border-0">
+                <img src="assets/img/lamp.svg" class="mt-4 img-fluid" style="width: 100px">
+            </div>
+            <div class="card-block px-2">
+                <h4 class="card-title mt-4 mb-4">Add smart lights to your home</h4>
+                <p class="card-text mb-0">Current savings: <b>0</b> </p>
+                <p class="card-text">New savings: <b>€33</b> (<span class="text-green">€33</span>)</p>
+                <p class="card-text mb-3 pb-5">Community satisfaction:
+                    <i class="fa fa-star"></i>
+                  <i class="fa fa-star"></i>
+                  <i class="fa fa-star"></i>
+                  <i class="fa fa-star"></i>
+                
+                </p>
+            </div>
+        </div>
+      </div>
+<div id="humidity" class="d-none">
+        <div class="card flex-row flex-wrap pt-3 justify-content-md-start justify-content-center">
+            <div class="card-header border-0">
+                <img src="assets/img/humid.svg" class="mt-4 img-fluid" style="width: 100px">
+            </div>
+            <div class="card-block px-2">
+                <h4 class="card-title mt-4 mb-4">Add humidity sensors to your home</h4>
+                <p class="card-text mb-0">Current savings: <b>0</b> </p>
+                <p class="card-text">New savings: <b>€30</b> (<span class="text-green">€30</span>)</p>
+                <p class="card-text mb-3 pb-5">Community satisfaction:
+                  <i class="fa fa-star"></i>
+                  <i class="fa fa-star"></i>
+                  <i class="fa fa-star"></i>
+                  <i class="fa fa-star"></i>
+                  <i class="fa fa-star"></i>
+                </p>
+            </div>
+        </div>
+      </div>
+        <small>*Prediction based on data measured from other members in your ECOHOOD who are already using smart lights.</small>
+
+
+        <a href="#" class="btn btn-outline-success btn-block mt-5">Purchase sensor</a>
+
+</div> <!--Wrapper previes-->
+
+
+          
+    </div>
+    
+
+  </div>
+
+  <!-- Optional JavaScript -->
+  <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+    integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous">
+  </script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+    integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous">
+  </script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+    integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous">
+  </script>
+  <script>
+
+      const selected = document.getElementById("dropdown");
+      const placeholder = document.getElementById("placeholder");
+  
+      const lights = document.getElementById("lights");
+      const humidity = document.getElementById("humidity");
+  
+      selected.addEventListener("click", function(){
+  
+        if(this.value !== "empty"){
+          const deviceWrapper = document.getElementById("devices");
+          deviceWrapper.classList.add("d-block");
+          placeholder.classList.add("d-none");
+        }
+  
+  
+        if(this.value == "lights"){
+  
+          lights.classList.add("d-block");
+          humidity.classList.remove("d-block");
+          humidity.classList.add("d-none");
+          console.log("lights selected");
+  
+        }
+  
+        if(this.value == "humidity"){
+          humidity.classList.add("d-block");
+          lights.classList.remove("d-block");
+          lights.classList.add("d-none");
+          console.log("humidity selected");
+  
+        }
+  
+      })
+      console.log(selected);
+      
+        </script>
+</body>
+
+
+
+
+</html>

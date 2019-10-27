@@ -1,0 +1,47 @@
+@mixin box {
+  width: 200px;
+  height: 150px;
+  border: solid 2px black;
+  border-radius: 10px;
+  font-size: 100px;
+}
+
+#rankingBox {
+  @include box;
+}
+
+#scoreBox {
+  @include box;
+}
+
+.images {
+  max-height: 80px;
+}
+
+.smartHouse {
+  max-height: 300px;
+}
+
+.smartNeighborhood {
+  width: 300px;
+}
+
+.links {
+  color: black;
+
+  &:hover {
+    color: rgb(243, 240, 64);
+    text-decoration: none;
+  }
+}
+
+.btn {
+  border: 1px solid #1BAF45;
+  background: none;
+  box-sizing: border-box;
+  border-radius: 19.5px;
+}
+
+.preview {
+  font-size: 18px;
+}
